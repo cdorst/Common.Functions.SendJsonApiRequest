@@ -1,7 +1,21 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
+
+  <PropertyGroup>
+    <Authors>cdorst</Authors>
+    <Description>Helper for composing and sending an HTTP API request with a JSON body (and application/json content-type header) and an optional authentication header</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>CDorst.Common.Functions.SendJsonApiRequest</PackageId>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CDorst.Common.Structures.HttpAuthentication" Version="4.0.0" />
+    <PackageReference Include="CDorst.Common.Structures.HttpJsonRequest" Version="1.0.0" />
+  </ItemGroup>
 
 </Project>
